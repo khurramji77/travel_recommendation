@@ -77,8 +77,9 @@ function searchCondition() {
             const destinations = data[input.toLowerCase()];
             if (destinations && destinations.length > 0) {
                 destinations.forEach(destination => {
+                    console.log(destination);
                     resultDiv.innerHTML += `<h2>${destination.name}</h2>`;
-                    resultDiv.innerHTML += `<img src="${destination.imageUrl}" alt="hjh">`;
+                    // resultDiv.innerHTML += `<img src="${destination.imageUrl}" alt="hjh">`;
                     resultDiv.innerHTML += `<p><strong>Symptoms:</strong> ${destination.description}</p>`;
                 })
             } else {

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url('./travel_recommendation_background.jpg');
   }
 
   /* Navigation Bar */
