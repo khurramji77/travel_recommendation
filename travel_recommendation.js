@@ -85,7 +85,7 @@ function searchCondition() {
                 destinations.forEach(destination => {
                     console.log(destination);
                     resultDiv.innerHTML += `<h2>${destination.name}</h2>`;
-                    // resultDiv.innerHTML += `<img src="${destination.imageUrl}" alt="hjh">`;
+                    resultDiv.innerHTML += `<img src="${destination.imageUrl}" width="200"  heigth="200" alt="hjh">`;
                     resultDiv.innerHTML += `<p><strong>Symptoms:</strong> ${destination.description}</p>`;
                 })
             } else {
