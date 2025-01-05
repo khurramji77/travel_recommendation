@@ -5,6 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.border-div {
+    width: 400px;
+    height: 250px;
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    }
+
 nav {
     background-color: #f0f0f0;
     padding: 20px;
