@@ -74,7 +74,13 @@ function searchCondition() {
     fetch('travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
-            const destinations = data[input.toLowerCase()];
+            
+            const lowerCaseKeyword = input.toLowerCase();
+            console.log("lowerCaseKeyword:",lowerCaseKeyword);
+            const destinations = data[lowerCaseKeyword];
+            // // Check if the keyword matches any key in the JSON object
+            // const destinations = Object.keys(destinations).find(key => key.toLowerCase() === lowerCaseKeyword);
+
             if (destinations && destinations.length > 0) {
                 destinations.forEach(destination => {
                     console.log(destination);
@@ -92,3 +98,11 @@ function searchCondition() {
         });
 }
 btnSearch.addEventListener('click', searchCondition);
+
+function resetForm() {
+    document.getElementById('conditionInput').value = "";
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = '';
+}
+
+btnReset.addEventListener('click', resetForm);
