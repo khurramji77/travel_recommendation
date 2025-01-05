@@ -16,8 +16,9 @@
       <a href="./contact_us.html">Contact Us</a>
     </nav>
     <div class="search">
-      <input type="text" placeholder="Enter a destination or keyword">
-      <button>Search</button>
+      <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+      <button id="btnSearch">Search</button>
+      <button id="btnReset">Clear</button>
     </div>
   </header>
 
@@ -34,6 +35,10 @@
       It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
     </p>
     <button>Book Now</button>
-  </div>
+    <div class="searchCondition">
+        <div id="result"></div>
+    </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
 </body>
 </html>
