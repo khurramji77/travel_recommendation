@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Travel Now</title>
-        <link rel="stylesheet" href="./travel_recommendation.css">
-    </head>
-    <body>
-        <nav><h1>Travel Now</h1>
-<ul>
-  <li><a href="./index.html" id="home">Home </a></li>
-  <li><a href="./about_us.html" id="home">About us </a></li>
-  <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
-  <li><input type="text" id="conditionInput" placeholder="Enter a destination keyword">  </li>
-  <li><button id='btnSearch'>Search</button>
-  <li><button id='btnReset'>Reset</button>
-  </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Bloom</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">  
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">TravelBloom</div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./about_us.html">About Us</a>
+    </nav>
+  </header>
 
-</ul>
-</nav>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="social-media">
+      <a href="#">&#x1F426;</a> <!-- Twitter icon (or add an actual icon) -->
+      <a href="#">&#x1F4F7;</a> <!-- Facebook -->
+      <a href="#">&#x1F4F9;</a> <!-- Instagram -->
+      <a href="#">&#x1F4FA;</a> <!-- YouTube -->
+    </div>
+    <h1>Contact Us</h1>
 
-<h1>Contact Us</h1>
-<p>Feel free to contact us to know more about your conditions and for treatment methods.</p>
 <form id="contactForm">
   <div>
     <label for="name">Name</label>
@@ -28,10 +34,6 @@
   <div>
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
-  </div>
-  <div>
-    <label for="condition">Condition</label>
-    <input type="text" id="condition" name="condition" required>
   </div>
   <div>
     <label for="message">Message</label>
@@ -44,5 +46,7 @@
       alert('Thank you for contacting us!')
   }
 </script>
-    </body>
+
+  </div>
+</body>
 </html>
