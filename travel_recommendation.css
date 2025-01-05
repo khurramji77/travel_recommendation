@@ -53,9 +53,9 @@ body {
   /* Hero Section */
   .hero {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     text-align: left;
-    padding: 50px;
+    padding: 65px;
   }
 
   .hero h1 {
